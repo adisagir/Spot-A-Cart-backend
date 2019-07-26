@@ -5,7 +5,7 @@ class CuisinesController < ApplicationController
     render json: current_user.cuisines
     else
       cuisines = Cuisine.all
-      render json: cuisines
+      render json: cuisines, include: "**"
     end
   end
 
