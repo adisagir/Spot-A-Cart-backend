@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   post "/login", to: "auth#login"
   post "/signup", to: "users#create"
   post "/reviews", to: "reviews#create"
+  post "/carts", to: "carts#create"
   patch "/profile", to: "users#update"
   get "/profile", to: "users#profile"
 
